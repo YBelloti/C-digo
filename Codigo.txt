@@ -1,0 +1,31 @@
+Codigo Hemilly Gatona kkkkk
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Página de Login</title>
+</head>
+<body>
+  <h2>Login</h2>
+  <form action="/login" method="post">
+    <div>
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div>
+      <label for="password">Senha:</label>
+      <input type="password" id="password" name="password" required>
+    </div>
+    <div>
+      <input type="submit" value="Entrar">
+    </div>
+  </form>
+</body>
+</html>
+
+
+
+
+OBS: Este código define uma página com um formulário de login contendo campos para inserir o e-mail e a senha. Quando o formulário é enviado, ele faz uma solicitação POST para o endpoint "/login" em um servidor para processar as informações.
+
+No entanto, este código HTML sozinho não é suficiente para implementar a funcionalidade de autenticação. Geralmente, você precisará de um backend (como um servidor) para receber as informações do formulário, verificar as credenciais e fornecer uma resposta adequada. Além disso, é importante garantir que as senhas sejam armazenadas de forma segura usando técnicas de criptografia adequadas.
