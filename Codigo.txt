@@ -23,6 +23,26 @@ Codigo Hemilly Gatona kkkkk
 </body>
 </html>
 
+Depois deste código você precisa adicionar um "formulario" que será no caso este abaixo, mas ai teria que criar um novo... exemplo: Fez o de cima certo? Agora, crie um arquivo chamado "login.php" no mesmo diretório e adicione o seguinte código PHP para processar o formulário:
+
+<?php
+// Verificar se o formulário foi submetido
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  // Receber os valores do formulário
+  $email = $_POST["email"];
+  $password = $_POST["password"];
+
+  // Verificar as credenciais (Exemplo simples, não recomendado para uso em produção)
+  if ($email === "usuario@example.com" && $password === "senha123") {
+    // Credenciais válidas, redirecionar para página de sucesso ou realizar ação necessária
+    header("Location: sucesso.php");
+    exit();
+  } else {
+    // Credenciais inválidas, exibir mensagem de erro ou realizar ação necessária
+    echo "E-mail ou senha inválidos.";
+  }
+}
+?>
 
 
 
